@@ -1,0 +1,33 @@
+﻿body {
+  background-color:#222;
+  width: 100%
+}
+
+.sun {
+	  background-color: #ffe000;
+	  width: 200px;
+	  height: 200px;
+	  border-radius: 360px;
+	  position: absolute;
+	  top: 200px;
+	  left: 300px;
+}
+@keyframes myAnim {
+	0% {
+		transform: rotate(0deg);
+		transform: translate(150px,50px);
+	}
+	
+	100% {
+		transform: rotate(360deg);
+		transform: translate(150px,50px);
+	}
+}
+.earth {
+	height: 100px;
+	width: 100px;
+	border-radius: 360px;
+	background: blue;
+	animation: myAnim .5s infinite;
+	transition: all .5s linear;
+}
